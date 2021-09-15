@@ -1,67 +1,30 @@
 <template>
-  <Navbar />
+  <div id="nav">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+  </div>
+  <router-view/>
 </template>
 
-<script>
-import Navbar from './components/Navbar.vue'
-
-export default {
-  name: 'App',
-  components: {
-    Navbar
-  }
-}
-</script>
-
-<style lang='sass'>
-/* colors */
-$primary: #FF6818;
-$black: #46403D;
-
-/* font */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
-$light: 300;
-$regular: 500;
-$bold: 700;
-
-/* reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody, tfoot,
-thead, tr, th, td, article, aside, canvas, details,
-embed, figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary, time, mark,
-audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
+#nav {
+  padding: 30px;
 }
 
-body {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: $regular;
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
 }
 
-ol, ul {
-  list-style: none;
-}
-
-a, a:visited, a:hover {
-  text-decoration: none;
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
