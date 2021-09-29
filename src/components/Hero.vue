@@ -15,40 +15,7 @@
 
 <script>
 export default {
-  name: 'Hero',
-  methods: {
-    parralax () {
-      const hero = document.querySelector('.hero-container')
-      const firstplan = document.querySelector('.firstplan')
-      const background = document.querySelector('.background')
-      const secondPlan = document.querySelector('.secondplan')
-      const distance = 25
-
-      function handleHero (e) {
-        const { offsetWidth: width, offsetHeight: height } = hero
-        let { offsetX: x, offsetY: y } = e
-
-        if (this !== e.target) {
-          x = x + e.target.offsetLeft
-          y = y + e.target.offsetTop
-        }
-
-        const xDistance = Math.round((x / width * distance) - (distance / 2))
-        const yDistance = Math.round((y / height * distance) - (distance / 2))
-
-        firstplan.style.top = `${yDistance}`
-        firstplan.style.left = `${xDistance}`
-
-        background.style.top = `${yDistance}`
-        background.style.left = `${xDistance}`
-
-        secondPlan.style.top = `${yDistance * 0.5}`
-        secondPlan.style.left = `${xDistance * 0.5}`
-      }
-
-      hero.addEventListener('mousemove', handleHero)
-    }
-  }
+  name: 'Hero'
 }
 </script>
 
@@ -56,21 +23,17 @@ export default {
 
 .hero-container {
   height: 100vh;
-  position: relative;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
 
   img {
-    height: 50vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    width: 100%;
   }
 }
 
 .hero-grid {
   height: 100vh;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr;
 }
 
 .anim {
