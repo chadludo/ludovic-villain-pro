@@ -1,6 +1,6 @@
 <template>
     <h1>Works</h1>
-    <div cards-container>
+    <div class='cards-container'>
       <Card />
     </div>
 </template>
@@ -18,6 +18,7 @@ export default {
 
 <style lang='scss'>
   .cards-container {
+    padding: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;

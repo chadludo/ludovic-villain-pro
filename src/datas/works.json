@@ -4,21 +4,34 @@
     "id": 1,
     "category": "Print",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore placeat labore exercitationem...",
-    "thumbnail": "../assets/images/thumbs/artbookdofus.jpg",
+    "thumbnail": "artbookdofus.jpg",
     "pictures": ["assets/images/pictures/artbook-dofus/01_PagesInt_EliGaston.jpg",
                 "assets/images/pictures/artbook-dofus/02_PagesInt_EliGaston.jpg",
                 "assets/images/pictures/artbook-dofus/03_PagesInt_EliGaston.jpg"
-              ]
+              ],
+    "url": "#/artbook-dofus"
   },
   {
     "id": 2,
     "title": "Beaumanoir",
     "category": "E-Learning",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore placeat labore exercitationem...",
-    "thumbnail": "../assets/images/thumbs/Beaumanoir.jpg",
+    "thumbnail": "Beaumanoir.jpg",
     "pictures": ["assets/images/pictures/beaumanoir/Beaumanoir1.jpg",
                 "assets/images/pictures/beaumanoir/Beaumanoir2.jpg",
                 "assets/images/pictures/beaumanoir/Beaumanoir3.jpg"
-              ]
+              ],
+    "url": "#/beaumanoir"
+  },
+  {
+    "id": 3,
+    "title": "Armitiere",
+    "category": "Affiche",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore placeat labore exercitationem...",
+    "thumbnail": "Armitiere.jpg",
+    "pictures": ["assets/images/pictures/armitiere/armitiere_streetview.jpg",
+                "assets/images/pictures/armitiere/armitiere_affiche.jpg"
+              ],
+    "url": "#/armitiere"
   }
 ]

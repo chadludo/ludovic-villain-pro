@@ -1,8 +1,12 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import Home from '../views/Home.vue'
-import Works from '../views/Works.vue'
-import SideProject from '../views/SideProject.vue'
-import Contact from '../views/Contact.vue'
+import Home from '@/views/Home.vue'
+import Works from '@/views/Works.vue'
+import SideProject from '@/views/SideProject.vue'
+import Contact from '@/views/Contact.vue'
+import ArtbookDofus from '@/views/ArtbookDofus.vue'
+import Beaumanoir from '@/views/Beaumanoir.vue'
+import Armitiere from '@/views/Armitiere.vue'
+import Work from '@/views/Work.vue'
 
 const routes = [
   {
@@ -24,6 +28,26 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     component: Contact
+  },
+  {
+    path: '/artbook-dofus',
+    name: 'Artbookdofus',
+    component: ArtbookDofus
+  },
+  {
+    path: '/beaumanoir',
+    name: 'Beaumanoir',
+    component: Beaumanoir
+  },
+  {
+    path: '/armitiere',
+    name: 'Armitiere',
+    component: Armitiere
+  },
+  {
+    path: '/works/:id',
+    name: 'Work',
+    component: Work
   }
 ]
 

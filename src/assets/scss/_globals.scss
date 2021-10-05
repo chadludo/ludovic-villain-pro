@@ -9,6 +9,10 @@ body {
 //Flexbox
 .flex {
   display: flex;
+
+  &-c{
+    flex-direction: column;
+  }
   
   &-jc-sb{
     justify-content: space-between;
