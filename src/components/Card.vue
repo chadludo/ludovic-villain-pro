@@ -1,13 +1,11 @@
 <template>
-<!-- {{ works }} -->
-    <router-link v-for='work in works' :key='work.id' to='/'>
-      <!-- <div class='card flex flex-c' :style="{ 'background-image': 'url(' + require('../assets/images/thumbs/' + work.thumbnail) + ')' }"> -->
-      <div>
-        <h3>{{ work.category }}</h3>
-        <h2>{{ work.name }}</h2>
-        <p>{{ work.description }}</p>
-      </div>
-    </router-link>
+  <router-link v-for='work in works' :key='work.id' to='/'>
+    <div class='card flex flex-c'>
+      <h3>{{ work.category }}</h3>
+      <h2>{{ work.name }}</h2>
+      <p>{{ work.description }}</p>
+    </div>
+  </router-link>
 </template>
 
 <script>
