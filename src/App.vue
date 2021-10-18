@@ -9,6 +9,7 @@
         <router-link to='/works'>Works</router-link>
         <router-link to='/side-project'>Side-project</router-link>
         <router-link to='/contact'>Contact</router-link>
+        <router-link to='/dashboard'>Dashboard</router-link>
       </div>
       <a href="#" class='header__menu hide-for-desktop'>
         <span></span>

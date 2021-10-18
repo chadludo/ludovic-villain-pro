@@ -1,6 +1,8 @@
 <template>
   <router-link v-for='work in works' :key='work.id' to='/'>
     <div class='card flex flex-c'>
+      {{ work.image }}
+      <p>{{ work.date }}</p>
       <h3>{{ work.category }}</h3>
       <h2>{{ work.name }}</h2>
       <p>{{ work.description }}</p>
